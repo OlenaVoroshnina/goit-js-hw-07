@@ -41,7 +41,12 @@ function onLinkClick(event) {
     const instance = basicLightbox.create(`
     <img src="${largeImgEl}" width="800" height="600">`)
 
-    instance.show()
+    instance.show();
+
+
+    if (event.code === "Escape") {
+        instance.close(); 
+    }
 
 }
 
