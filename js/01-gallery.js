@@ -43,11 +43,11 @@ function onLinkClick(event) {
 
     instance.show();
 
-
-    if (event.code === "Escape") {
-        instance.close(); 
-    }
-
-}
+    galleryListEl.addEventListener('keydown', event => {
+        if (event.code === "Escape") {
+            instance.close();
+        }
+    });
+};
 
 
